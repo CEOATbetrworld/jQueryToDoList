@@ -3,9 +3,9 @@
     "name": "To-Do",
      "icons": [
       {
-        "src": "check-square.svg",
-        "sizes": "all",
-        "type": "image/svg"
+        "src": "check-square.png",
+        "sizes": "144x144",
+        "type": "image/png"
       }
     ],
     "background_color": "#FFFFFF",
