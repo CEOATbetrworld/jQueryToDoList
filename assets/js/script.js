@@ -1,14 +1,27 @@
-// strike through specifc to-do
+// strike(line) through specifc to-do
+// we must use on "click" "li" just because .click() will not work on future elements
 
-$("li").click(function () {
+$("ul").on("click", "li", function () {
     $(this).toggleClass("done")
 })
 
 // Click on X to delete to-do
+// we must use on "click" "span" just because .click() will not work on future elements
 
-$("span").click(function (event) {
+$("ul").on("click", "span", function (event) {
     event.stopPropagation();
     $(this).parent().fadeOut(500, function () {
         $(this).remove()
     });
+})
+
+// Add new to-do
+
+$("input[type='text']").keypress(function (event) {
+    if (event.which === 13) {
+        // grap new to-to text from input
+        var toDoText = $(this).val();
+        $(this).val("");
+        $("ul").append("<li><span>X</span> " + toDoText + "</li>");
+    }
 })
