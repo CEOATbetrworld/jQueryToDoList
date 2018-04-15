@@ -4,8 +4,8 @@
      "icons": [
       {
         "src": "check-square.svg",
-        "sizes": "144x144",
-        "type": "image/png"
+        "sizes": "all",
+        "type": "image/svg"
       }
     ],
     "background_color": "#FFFFFF",
