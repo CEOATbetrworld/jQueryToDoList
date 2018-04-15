@@ -22,6 +22,10 @@ $("input[type='text']").keypress(function (event) {
         // grap new to-to text from input
         var toDoText = $(this).val();
         $(this).val("");
-        $("ul").append("<li><span>X</span> " + toDoText + "</li>");
+        $("ul").append("<li> <span><i class='fa fa-trash'></i></span> " + toDoText + "</li>");
     }
+});
+
+$("#toggle-input").click(function () {
+    $("input[type='text']").fadeToggle();
 })

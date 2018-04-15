@@ -8,22 +8,34 @@
     <script src="assets/js/lib/jquery-3.3.1.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500i,700i" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
+        crossorigin="anonymous"></script>
     <title>jQuery To-Do List</title>
 </head>
 
 <body>
     <div id="container">
-        <h1>To-Do List</h1>
+        <h1>To-Do List
+            <span id="toggle-input">
+                <i class="fas fa-plus"></i>
+            </span>
+        </h1>
         <input type="text" placeholder="Add New To-Do">
         <ul>
             <li>
-                <span>X</span> Concentration
+                <span>
+                    <i class="fa fa-trash"></i>
+                </span> Concentration
             </li>
             <li>
-                <span>X</span> Integrity
+                <span>
+                    <i class="fa fa-trash"></i>
+                </span> Integrity
             </li>
             <li>
-                <span>X</span> Chastity
+                <span>
+                    <i class="fa fa-trash"></i>
+                </span> Chastity
             </li>
         </ul>
     </div>
