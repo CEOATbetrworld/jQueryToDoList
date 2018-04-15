@@ -1,0 +1,15 @@
+{
+    "short_name": "To-Do",
+    "name": "To-Do",
+     "icons": [
+      {
+        "src": "check-square.svg",
+        "sizes": "144x144",
+        "type": "image/png"
+      }
+    ],
+    "background_color": "#FFFFFF",
+    "start_url": "index.html",
+    "display": "fullscreen",
+    "orientation": "portrait"
+  }
